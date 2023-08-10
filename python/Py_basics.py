@@ -32,10 +32,13 @@ print(lst)
 
 list2 = [5, 8, 1, 6, 2, 2, 4]
 print(f"Unsorted list: {list2}")
+print(f'\n\n\n Printing the elemen using negative indexing {list2[-2],list2[-1]}\n\n\n')   
 
 list2.sort()
 
-print(f"Sorted list: {list2}")
+print(f"Sorted list: {list2}\n\n\n")
+
+
 
 ##############---------------------Dictionary----------------#################
 
@@ -80,3 +83,13 @@ for k,v in dictionary.items():
     print(f'Key {k}')
 
 
+########### ----- function ----- ############
+
+def even_odd_check(num):
+    if(num%2==0):
+        print("Even.\n")
+    else:
+        print("Odd.\n")
+
+num = int(input("Enter any number: "))
+even_odd_check(num)
